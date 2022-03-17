@@ -1,10 +1,10 @@
 import React from "react";
 import "./directory.styles.scss";
-import {useState} from "react";
+// import {useState} from "react";
 import MenuItem from "../menu-item/menu-item.component";
 
 function Directory() {
- const [sections, setSections] = useState(
+ const sections =
         [
             {
             title: 'hats',
@@ -38,8 +38,8 @@ function Directory() {
             id: 5,
             linkUrl: 'shop/mens'
             }
-        ]
-    );
+        ];
+        
     return (
         <div className="directory-menu">
             {sections.map(({title, imageUrl, id, size})=>(
